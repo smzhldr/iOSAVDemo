@@ -8,7 +8,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *centerButton;
 
+- (IBAction)onCenterButtonClicked:(id)sender;
 
 @end
 

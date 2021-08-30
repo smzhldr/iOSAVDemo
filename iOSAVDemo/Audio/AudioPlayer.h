@@ -11,7 +11,9 @@
 
 @required
 
-- (void) play: (NSString*) path sampleRate:(NSInteger) sampleRate channels:(NSInteger) channels;
+- (instancetype) initWithValue:(NSInteger) sampleRate channels:(NSInteger) channels bitDepth:(NSInteger) bitDepth;
+
+- (void) start: (NSString*) path;
 
 - (void) stop;
 

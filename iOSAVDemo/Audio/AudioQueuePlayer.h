@@ -11,5 +11,11 @@
 
 @interface  AudioQueuePlayer : NSObject<AudioPlayer>
 
+- (instancetype) initWithValue:(NSInteger) sampleRate channels:(NSInteger) channels bitDepth:(NSInteger) bitDepth;
+
+- (void) start:(NSString *)path;
+
+- (void) stop;
+
 @end
 
